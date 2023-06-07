@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>First jQuery File</title>
+		<script type="text/javascript" src="../js/jQuery.js"></script>
+		<!-- ../는 한 단계 상위 폴더로 이동 -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			//type 속성 생략하면 기본 값으로 javascript로 인식한다
+			//jQuery = javascript의 접근성을 높임
+			
+			//1.hide()
+			$(document).ready(function(){
+				// $ = jQuery => 문서가 준비 되었다면 
+				jQuery("h2").click(function(){
+					//h2 태그에 클릭 이벤트 사건이 발생하면
+					$(this).hide();
+					// this는 현재요소 h2태그를 가리킨다. jQuery hide()함수로 해당영역  h2를 사라지게 한다
+			
+			//2.text() : 선택 요소의 문자를 반환하거나 변경한다.
+					
+				});
+				
+				
+			});
+		
+		
+		</script>
+	</head>
+	<body>
+		<h2>여기를 클릭하면 사라집니다.</h2>
+	</body>
+</html>

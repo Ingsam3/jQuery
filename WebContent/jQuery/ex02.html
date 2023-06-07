@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery02</title>
+		<style type="text/css">
+			div.out{
+				width: 230px; height: 200px; 
+				background: yellow; 
+			}
+		
+		</style>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<!-- <script type="text/javascript" src="../js/jQuery.js"></script> -->
+	</head>
+	<body>
+		<div class="out">
+			<p>마우스를 여기로 움직이세요.</p>
+			<p>0</p>
+		</div>
+		<script type="text/javascript">
+			//jQuery
+			
+			$i = 0; //jquery변수
+			$("div.out").mouseover(function(){
+				//마우스 오버 이벤트 발생
+				$("p:first",this).text("mouse over"); 
+				//p:first = p태크 처음 요소에 적용 
+				// test() jquery 함수에 인자값이 있으면 해당 요소에 문자를 변경 적용한다.
+				$("p:last",this).text(++$i); //p:last=p태그 마지막 요소에 적용(선행증가)	
+				
+				
+			});
+		
+		
+		</script>
+	
+	</body>
+</html>
