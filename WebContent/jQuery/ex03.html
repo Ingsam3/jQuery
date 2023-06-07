@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#id").focus(function(){ //id 유일 선택자 요소에 포커스를 가졌을 때
+					$("#id").css("background-color", "orange");//id 선택자 요소에 배경색 설정
+					
+				});
+				
+				$("#id").blur(function(){ //id선택자 요소에 포커스를 잃어버렸을 때
+					$(this).css("background","white");//해당요소에 배경색을 흰색으로 설정
+					
+					
+				});
+				
+				
+			});
+		
+		
+		
+		</script>
+	</head>
+	<body>
+		ID : <input type="text" id="id" size="16">
+	</body>
+</html>
